@@ -16,6 +16,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)DOM\DomInstanceExtensions.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)DOM\SectionDefinitionExtensions.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)DOM\SectionExtensions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Extensions\BulkCrudFailedException.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Extensions\FilterExtensions.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Extensions\IBulkOperationResultExtensions.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Extensions\IEnumerableExtensions.cs" />

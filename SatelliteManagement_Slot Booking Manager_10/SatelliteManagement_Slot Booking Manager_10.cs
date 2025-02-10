@@ -98,11 +98,7 @@ namespace Slot_Bookings_Extension_1
 					var slotsByTransponder = GetTransponderSlots(slotToBook.DomSlot.SlotSection.TransponderId);
 					var reservedNodes = GetReservedNodes(logger, slotToBook, slotsByTransponder);
 
-					// TODO
-					var workflowHandler = new DomApplications.Workflow.WorkflowHandler(engine);
-					var domTransponderSlotAction = workflowHandler.GetJobNodeRelationshipActionsByDomInstanceId(DomApplications.DomInstanceIds.SlcWorkflow.Definitions.JobNodeRelationshipActions.TransponderSlot.Id) ?? throw new InvalidOperationException("DOM instance 'Transponder Slot' is not available in DOM module '(slc)workflows'.");
-
-					bookingExtensionHandler.ReturnResult(reservedNodes, domTransponderSlotAction.InstanceId);
+					bookingExtensionHandler.ReturnResult(reservedNodes, Skyline.DataMiner.Utils.MediaOps.Helpers.Scheduling.JobNodeRelationshipActions.TransponderSlotId);
 				}
 				catch (Exception ex)
 				{
@@ -115,13 +111,7 @@ namespace Slot_Bookings_Extension_1
 		{
 			var reservedNodes = new List<ExtensionNode>();
 
-			var settings = new ClientMetadata
-			{
-				ModuleId = String.Empty,
-				Prefix = String.Empty,
-			};
-
-			var resourceStudioHelper = new ResourceStudioHelper(engine, settings);
+			var resourceStudioHelper = new ResourceStudioHelper(engine);
 
 			foreach (var domSlot in slotsByTransponder)
 			{

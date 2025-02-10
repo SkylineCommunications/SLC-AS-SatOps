@@ -7,11 +7,11 @@
 	using Skyline.DataMiner.Automation;
 	using Skyline.DataMiner.Net.Apps.DataMinerObjectModel;
 	using Skyline.DataMiner.Net.Sections;
+	using Skyline.DataMiner.Utils.MediaOps.Helpers.ResourceStudio;
 	using Skyline.DataMiner.Utils.SatOps.Common.DOM;
 	using Skyline.DataMiner.Utils.SatOps.Common.DOM.Applications.DomIds;
 	using Skyline.DataMiner.Utils.SatOps.Common.Extensions;
 	using Skyline.DataMiner.Utils.SatOps.Common.Utils;
-	using Skyline.DataMiner.Utils.MediaOps.Helpers.ResourceStudio;
 
 	using DomApplications = Skyline.DataMiner.Utils.SatOps.Common.DOM.Applications;
 
@@ -119,16 +119,8 @@
 
 			if (resourceInstances.Count > 0)
 			{
-				var resourceHelper = new ResourceStudioHelper(engine, new ClientMetadata()); // TODO replace direct DOM delete to go through helper classes
-				var resourceDomHelper = new DomHelper(engine.SendSLNetMessages, SlcResource_Studio.ModuleId);
-				var resourceDomInstances = new List<DomInstance>();
-
-				foreach (var resource in resourceInstances)
-				{
-					resourceDomInstances.Add(resourceDomHelper.DomInstances.GetByID(resource.Id));
-				}
-
-				domHelper.DomInstances.Delete(resourceDomInstances).ThrowOnFailure();
+				var resourceHelper = new ResourceStudioHelper(engine);
+				resourceHelper.DeleteResources(resourceInstances);
 			}
 		}
 
@@ -152,10 +144,10 @@
 				var discreteExists = satelliteCapability.Discretes.Any(x => x.Equals(satelliteName));
 				if (!discreteExists)
 				{
-					var discretes = satelliteCapability.Discretes.ToList();
+					var discretes = satelliteCapability.Discretes.Keys.ToList();
 					discretes.Add(satelliteName);
 
-					satelliteCapability.SetDiscretes(discretes);
+					satelliteCapability = resourceStudioHelper.UpdateCapabilityDiscretes(satelliteCapability, discretes);
 				}
 			}
 
@@ -174,10 +166,10 @@
 
 				if (!discreteExists)
 				{
-					var discretes = transponderCapability.Discretes.ToList();
+					var discretes = transponderCapability.Discretes.Keys.ToList();
 					discretes.Add(transponderName);
 
-					transponderCapability.SetDiscretes(discretes);
+					transponderCapability = resourceStudioHelper.UpdateCapabilityDiscretes(transponderCapability, discretes);
 				}
 			}
 

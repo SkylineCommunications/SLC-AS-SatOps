@@ -127,12 +127,7 @@ namespace Manual_Slot_Creation_1
 
 				string newStatus = "active";
 
-				var settings = new ClientMetadata
-				{
-					ModuleId = String.Empty,
-					Prefix = String.Empty,
-				};
-				var resourceStudioHelper = new ResourceStudioHelper(engine, settings);
+				var resourceStudioHelper = new ResourceStudioHelper(engine);
 
 				foreach (var slot in dialog.SlotDefinitions)
 				{
