@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects Condition="'$(MSBuildVersion)' == '' Or '$(MSBuildVersion)' &lt; '16.0'">$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>4d8df3df-ee1a-4d4f-9502-083fc7928faa</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>MediaOpsShared</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)DOM\CrudHelperComponentExtensions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DOM\DomBehaviorDefinitionExtensions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DOM\DomCache.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DOM\DomDefinitionExtensions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DOM\DomInstanceExtensions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DOM\SectionDefinitionExtensions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DOM\SectionExtensions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Extensions\FilterExtensions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Extensions\IBulkOperationResultExtensions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Extensions\IEnumerableExtensions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)LCA\Applications.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)LCA\Data\App.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)LCA\Data\AppConfig.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)LCA\Data\AppInfo.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Tools\FilterQueryExecutor.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Tools\Enums.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Tools\HashCode.cs" />
+  </ItemGroup>
+</Project>

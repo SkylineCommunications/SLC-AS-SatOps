@@ -1,0 +1,479 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34728.123
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Internal", "Internal", "{B20B4227-0AAE-42E0-8BF4-E5BAE92D3DCD}"
+	ProjectSection(SolutionItems) = preProject
+		Internal\.editorconfig = Internal\.editorconfig
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Scripts", "Scripts", "{290C2A4F-B3F8-4C53-9658-8798F76F36E5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Dlls", "Dlls", "{EAECB5F6-46F5-4492-873B-578475353A64}"
+	ProjectSection(SolutionItems) = preProject
+		Dlls\AboutThisFolder.md = Dlls\AboutThisFolder.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Documentation", "Documentation", "{2E17DD65-45B4-42B3-8E20-E8239E29DD3B}"
+	ProjectSection(SolutionItems) = preProject
+		Documentation\AboutThisFolder.md = Documentation\AboutThisFolder.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CompanionFiles", "CompanionFiles", "{E4956A12-0C6D-4A75-841F-61083971CC02}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Skyline DataMiner", "Skyline DataMiner", "{763D390F-A7D2-4FD9-AB1E-B1B07FC26B90}"
+	ProjectSection(SolutionItems) = preProject
+		CompanionFiles\Skyline DataMiner\AboutThisFolder.md = CompanionFiles\Skyline DataMiner\AboutThisFolder.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{F8938D60-51A0-4880-9CFC-19C66379BB5D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Code Analysis", "Code Analysis", "{52665057-4580-4D24-9F75-2C01B5EDB6B0}"
+	ProjectSection(SolutionItems) = preProject
+		Internal\Code Analysis\qaction-debug.ruleset = Internal\Code Analysis\qaction-debug.ruleset
+		Internal\Code Analysis\qaction-release.ruleset = Internal\Code Analysis\qaction-release.ruleset
+		Internal\Code Analysis\stylecop.json = Internal\Code Analysis\stylecop.json
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{7F67815A-743C-4B92-8AD2-894F44368C7E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SatOps.Common", "SatOps.Common", "{A70D63F2-DD89-4CB9-981D-C0CF32C3DFFE}"
+	ProjectSection(SolutionItems) = preProject
+		SatOpsCommon.xml = SatOpsCommon.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Actions", "Actions", "{1F899A42-8CC3-43C8-A56D-3127C4DBA324}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SatOps.Common_1", "MediaOps.Common_1\SatOps.Common_1.csproj", "{5BF0DBC5-E687-4847-9120-FA8C3AA84D51}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{3A89A63B-C100-411F-8B70-D0EC2BCE1E7B}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "GQI", "GQI", "{C437F714-CA4D-48B4-8EEE-4A6F4ACA5ECA}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "DOM Classes", "DOM Classes\DOM Classes.shproj", "{6D0E2D1D-03FB-42E7-B956-858C49771645}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "SatOpsShared", "MediaOpsShared\SatOpsShared.shproj", "{4D8DF3DF-EE1A-4D4F-9502-083FC7928FAA}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WorkflowEndToEndTests", "WorkflowEndToEndTests\WorkflowEndToEndTests.csproj", "{3D9DF140-B246-11EE-9EC1-0800200C9A66}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Satellite Management", "Satellite Management", "{831D653C-4BCD-4365-B065-5B6921F89F6E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SatelliteManagement_Apply Transponder To Plan", "SatelliteManagement_Apply Transponder To Plan", "{63FE29EA-7936-4B23-8A9C-FE2CF3BAE3B8}"
+	ProjectSection(SolutionItems) = preProject
+		SatelliteManagement_Apply Transponder To Plan.xml = SatelliteManagement_Apply Transponder To Plan.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "GQI", "GQI", "{C840849A-7987-4BE4-A5A1-964DF41E394D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SatelliteManagement_IAS_Import Satellite Data", "SatelliteManagement_IAS_Import Satellite Data", "{9542B9DC-DE44-4425-A77C-922B5C3D919D}"
+	ProjectSection(SolutionItems) = preProject
+		SatelliteManagement_IAS_Import Satellite Data.xml = SatelliteManagement_IAS_Import Satellite Data.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SatelliteManagement_IAS_Transponder Plan Manager", "SatelliteManagement_IAS_Transponder Plan Manager", "{E0DC5D2B-6DAD-451A-8B20-D563698D69B4}"
+	ProjectSection(SolutionItems) = preProject
+		SatelliteManagement_IAS_Transponder Plan Manager.xml = SatelliteManagement_IAS_Transponder Plan Manager.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Actions", "Actions", "{46C76584-D613-411E-A5D7-603F85EC4456}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Actions", "Actions", "{54CBD6D9-3321-4A9F-AC94-0DB5B2491F2A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SatelliteManagement_GQI_Get Slot Definitions", "SatelliteManagement_GQI_Get Slot Definitions", "{BDCE22D1-C364-4914-90C7-F632C5813602}"
+	ProjectSection(SolutionItems) = preProject
+		SatelliteManagement_GQI_Get Slot Definitions.xml = SatelliteManagement_GQI_Get Slot Definitions.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SatelliteManagement_GQI_Get Transponder Slots", "SatelliteManagement_GQI_Get Transponder Slots", "{18758C8E-7E4B-4704-A23A-77F3FF5B31FE}"
+	ProjectSection(SolutionItems) = preProject
+		SatelliteManagement_GQI_Get Transponder Slots.xml = SatelliteManagement_GQI_Get Transponder Slots.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SatelliteManagement_GQI_Transponders Applied in Plan", "SatelliteManagement_GQI_Transponders Applied in Plan", "{8B28A4EA-EC50-46B1-8CB2-C935697DE31D}"
+	ProjectSection(SolutionItems) = preProject
+		SatelliteManagement_GQI_Transponders Applied in Plan.xml = SatelliteManagement_GQI_Transponders Applied in Plan.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Actions", "Actions", "{4D9DDD9C-9008-4006-8FB6-6A02613AE596}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Actions", "Actions", "{B494F4D3-496E-41D2-AEA4-324708940369}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SatelliteManagement_GQI_Get Transponder Slots_1", "SatelliteManagement_GQI_Get Transponder Slots_1\SatelliteManagement_GQI_Get Transponder Slots_1.csproj", "{FC8934FE-9F4E-42A5-9D4C-6F65FE7CFC60}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Actions", "Actions", "{DFA95251-EC6A-47D1-A36D-38332A1574AC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SatelliteManagement_GQI_Get Slot Definitions_1", "SatelliteManagement_GQI_Get Slot Definitions_1\SatelliteManagement_GQI_Get Slot Definitions_1.csproj", "{3ABEC2F6-DACF-4E78-B16C-FE3EF7CFEE1F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Actions", "Actions", "{8C0E39F6-2C50-4ABB-9455-784CB2872B3F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SatelliteManagement_Activate Transponder Plan With ID", "SatelliteManagement_Activate Transponder Plan With ID", "{1B83FDAF-DAA2-4420-936F-ABFA4ECC2578}"
+	ProjectSection(SolutionItems) = preProject
+		SatelliteManagement_Activate Transponder Plan With ID.xml = SatelliteManagement_Activate Transponder Plan With ID.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Actions", "Actions", "{C32E3BE1-2754-4EFD-84D0-C37D87946C9A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SatelliteManagement_Slot Booking Manager", "SatelliteManagement_Slot Booking Manager", "{81165CDF-398D-4FF3-8927-D7ECD163BB2B}"
+	ProjectSection(SolutionItems) = preProject
+		SatelliteManagement_Slot Booking Manager.xml = SatelliteManagement_Slot Booking Manager.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Actions", "Actions", "{680DC32A-B9B2-463D-B1C0-423F5C4CB5A9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SatelliteManagement_IAS_Manual Slot Creation", "SatelliteManagement_IAS_Manual Slot Creation", "{EE1DA260-55E7-4B79-B062-E18538FB8265}"
+	ProjectSection(SolutionItems) = preProject
+		SatelliteManagement_IAS_Manual Slot Creation.xml = SatelliteManagement_IAS_Manual Slot Creation.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Actions", "Actions", "{D4586855-43EF-4DF7-9357-9511B84395B9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SatelliteManagement_Activate Transponder Plan With ID_1", "SatelliteManagement_Activate Transponder Plan With ID_1\SatelliteManagement_Activate Transponder Plan With ID_1.csproj", "{2AF829E5-BD36-4F7E-9B08-60DB16218465}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SatelliteManagement_Apply Transponder To Plan_1", "SatelliteManagement_Apply Transponder To Plan_1\SatelliteManagement_Apply Transponder To Plan_1.csproj", "{CDCAC979-5959-48BB-9116-3A7F960613E9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SatelliteManagement_GQI_Transponders Applied in Plan_1", "SatelliteManagement_GQI_Transponders Applied in Plan_1\SatelliteManagement_GQI_Transponders Applied in Plan_1.csproj", "{DD4235C3-C0C3-41CE-B448-4D515E8A5B5E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SatelliteManagement_IAS_Import Satellite Data_1", "SatelliteManagement_IAS_Import Satellite Data_1\SatelliteManagement_IAS_Import Satellite Data_1.csproj", "{9A7876E5-679B-4A4D-B683-B51233C5A101}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "IAS", "IAS", "{6DBFEEAD-574F-464B-A713-22883E85F6D9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SatelliteManagement_IAS_Manual Slot Creation_1", "SatelliteManagement_IAS_Manual Slot Creation_1\SatelliteManagement_IAS_Manual Slot Creation_1.csproj", "{DF72ACD1-AE46-4938-9E6E-0D14112B1C0D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SatelliteManagement_IAS_Transponder Plan Manager_1", "SatelliteManagement_IAS_Transponder Plan Manager_1\SatelliteManagement_IAS_Transponder Plan Manager_1.csproj", "{6C59F31F-EC56-4122-ADAC-240ACD11419B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SatelliteManagement_Slot Booking Manager_10", "SatelliteManagement_Slot Booking Manager_10\SatelliteManagement_Slot Booking Manager_10.csproj", "{0B3C7A42-968A-4EF6-B71A-77DCED8415CA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SatelliteManagement_DOM Button Actions", "SatelliteManagement_DOM Button Actions", "{A21F6655-9561-4061-A393-D2AA6D686620}"
+	ProjectSection(SolutionItems) = preProject
+		SatelliteManagement_DOM Button Actions.xml = SatelliteManagement_DOM Button Actions.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Actions", "Actions", "{AD507B4D-D26F-4246-AB54-2C0D28F6750B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SatelliteManagement_DOM Button Actions_1", "SatelliteManagement_DOM Button Actions_1\SatelliteManagement_DOM Button Actions_1.csproj", "{9353083F-E7C7-4046-AC8F-C40A058ADFB7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SatelliteManagement_GQI_Action Buttons", "SatelliteManagement_GQI_Action Buttons", "{372AEC0A-2CE7-41EB-9A68-463E6BC0019B}"
+	ProjectSection(SolutionItems) = preProject
+		SatelliteManagement_GQI_Action Buttons.xml = SatelliteManagement_GQI_Action Buttons.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Actions", "Actions", "{C74122A5-D3FD-4C4E-ADE2-B2CAD4088CCD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SatelliteManagement_GQI_Action Buttons", "SatelliteManagement_GQI_Action Buttons\SatelliteManagement_GQI_Action Buttons.csproj", "{D4E83C8E-A953-4E10-AD5F-15911F90499E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SatelliteManagement_Import Demo Data_1", "SatelliteManagement_Import Demo Data_1\SatelliteManagement_Import Demo Data_1.csproj", "{E15A782F-E155-48EC-98BD-5ACAE959AD04}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SatOps.GQI.Common", "SatOps.GQI.Common", "{C0C3AD2F-0391-4529-8F01-9D842838B94F}"
+	ProjectSection(SolutionItems) = preProject
+		SatOps.GQI.Common.xml = SatOps.GQI.Common.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Actions", "Actions", "{48A15F99-03B3-40A9-A1C7-0402BD7843FE}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SatOps.GQI.Common_1", "MediaOps.GQI.Common_1\SatOps.GQI.Common_1.csproj", "{F40FDC53-6AD4-4ACB-8985-3AA5684628E3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SatelliteManagement_Import Demo Data", "SatelliteManagement_Import Demo Data", "{78F4CB19-09CA-4BAE-9499-80F08BB7B25C}"
+	ProjectSection(SolutionItems) = preProject
+		SatelliteManagement_Import Demo Data.xml = SatelliteManagement_Import Demo Data.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Actions", "Actions", "{21084DDB-D468-490A-B5F6-1CC42BF9F543}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Generate Demo Data", "Generate Demo Data", "{94E1B472-1756-4FD5-A93C-9FFF17F95582}"
+	ProjectSection(SolutionItems) = preProject
+		Generate Demo Data.xml = Generate Demo Data.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Actions", "Actions", "{B101EA0D-FE47-4171-A0DD-D17C9E49BB16}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Generate Demo Data_1", "Generate Demo Data_1\Generate Demo Data_1.csproj", "{C17EF63B-5FDC-4EC4-B9CC-2436C23874FF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tools", "Tools", "{58DD32F7-500B-4DBF-B166-5CB399DDA920}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SatelliteManagement_Delete Satellite Module Instances", "SatelliteManagement_Delete Satellite Module Instances", "{F26A2254-93D3-4B3B-9CF5-EBFBD900339A}"
+	ProjectSection(SolutionItems) = preProject
+		SatelliteManagement_Delete Satellite Module Instances.xml = SatelliteManagement_Delete Satellite Module Instances.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Actions", "Actions", "{EB16BC23-49F8-40E2-A4AA-C980F55496A1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SatelliteManagement_Delete Satellite Module Instances_1", "SatelliteManagement_Delete Satellite Module Instances_1\SatelliteManagement_Delete Satellite Module Instances_1.csproj", "{8DCBD11D-3FD2-4134-BB63-2149902AA9F7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SatelliteManagement_GQI_Transponders In Satellite", "SatelliteManagement_GQI_Transponders In Satellite", "{07729F22-F906-42BD-B108-A93A5BCE77D2}"
+	ProjectSection(SolutionItems) = preProject
+		SatelliteManagement_GQI_Transponders In Satellite.xml = SatelliteManagement_GQI_Transponders In Satellite.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Actions", "Actions", "{75E66A74-18F3-43D3-9184-9A13E92C2FD8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SatelliteManagement_GQI_Transponders In Satellite_1", "SatelliteManagement_GQI_Transponders In Satellite_1\SatelliteManagement_GQI_Transponders In Satellite_1.csproj", "{71DA2C7C-464B-42B3-BD7F-332D35A7CA9D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SatelliteManagement_Remove Transponder From Plan", "SatelliteManagement_Remove Transponder From Plan", "{9294BA53-E189-4C99-ACBE-F2FCD699D858}"
+	ProjectSection(SolutionItems) = preProject
+		SatelliteManagement_Remove Transponder From Plan.xml = SatelliteManagement_Remove Transponder From Plan.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Actions", "Actions", "{464A5BC7-E224-463A-82BF-42A011D62D32}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SatelliteManagement_Remove Transponder From Plan_1", "SatelliteManagement_Remove Transponder From Plan_1\SatelliteManagement_Remove Transponder From Plan_1.csproj", "{8805DF48-257F-4F28-B21A-5AB751D0EED7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{F5F0D181-F1FF-4ED3-8E5D-8A0228A255E5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SatelliteManagement_Core_BeamHandler", "SatelliteManagement_Core_BeamHandler", "{9CAB726C-7351-48C0-8EEB-52B86DC67457}"
+	ProjectSection(SolutionItems) = preProject
+		SatelliteManagement_Core_BeamHandler.xml = SatelliteManagement_Core_BeamHandler.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Actions", "Actions", "{B9D23DDF-60E0-4FDA-8E60-609DA1E4BFEA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SatelliteManagement_Core_BeamHandler_1", "SatelliteManagement_Core_BeamHandler_1\SatelliteManagement_Core_BeamHandler_1.csproj", "{09A178A5-7162-4149-BDEC-02CA47F282D7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SatelliteManagement_Core_SatelliteHandler", "SatelliteManagement_Core_SatelliteHandler", "{4535C00C-16A2-4708-8D5A-C6EB788DF9FE}"
+	ProjectSection(SolutionItems) = preProject
+		SatelliteManagement_Core_SatelliteHandler.xml = SatelliteManagement_Core_SatelliteHandler.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Actions", "Actions", "{12A3FECD-2054-4BD7-BC76-8969DFC4024F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SatelliteManagement_Core_SatelliteHandler_1", "SatelliteManagement_Core_SatelliteHandler_1\SatelliteManagement_Core_SatelliteHandler_1.csproj", "{2B245689-B733-4EF7-AB73-BFD0A6D1F6B6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SatelliteManagement_Core_SlotHandler", "SatelliteManagement_Core_SlotHandler", "{44A13671-5CAF-4586-AC2A-CB66E9B39212}"
+	ProjectSection(SolutionItems) = preProject
+		SatelliteManagement_Core_SlotHandler.xml = SatelliteManagement_Core_SlotHandler.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Actions", "Actions", "{E2C02699-847D-479E-B476-92B4512BC201}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SatelliteManagement_Core_SlotHandler_1", "SatelliteManagement_Core_SlotHandler_1\SatelliteManagement_Core_SlotHandler_1.csproj", "{CF27D585-6302-4130-98E0-E0E0133B493F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SatelliteManagement_Core_TransponderHandler", "SatelliteManagement_Core_TransponderHandler", "{8FA39960-D472-42C3-8245-EFEEC20EDAEE}"
+	ProjectSection(SolutionItems) = preProject
+		SatelliteManagement_Core_TransponderHandler.xml = SatelliteManagement_Core_TransponderHandler.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Actions", "Actions", "{E87C1A77-CDF2-4980-8FB1-9F0D5C95849C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SatelliteManagement_Core_TransponderHandler_1", "SatelliteManagement_Core_TransponderHandler_1\SatelliteManagement_Core_TransponderHandler_1.csproj", "{A0C06BAF-4B1D-4699-831A-ED94528C6A55}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SatelliteManagement_Core_TransponderPlanHandler", "SatelliteManagement_Core_TransponderPlanHandler", "{AEB0A72F-3C01-4B86-BB04-5CB96DA9F3D7}"
+	ProjectSection(SolutionItems) = preProject
+		SatelliteManagement_Core_TransponderPlanHandler.xml = SatelliteManagement_Core_TransponderPlanHandler.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Actions", "Actions", "{90AA1FF4-939E-45B1-BE64-D90322169D50}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SatelliteManagement_Core_TransponderPlanHandler_1", "SatelliteManagement_Core_TransponderPlanHandler_1\SatelliteManagement_Core_TransponderPlanHandler_1.csproj", "{C48A95CF-A60A-4FF0-940A-F81D5D92E90C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5BF0DBC5-E687-4847-9120-FA8C3AA84D51}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5BF0DBC5-E687-4847-9120-FA8C3AA84D51}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5BF0DBC5-E687-4847-9120-FA8C3AA84D51}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5BF0DBC5-E687-4847-9120-FA8C3AA84D51}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3D9DF140-B246-11EE-9EC1-0800200C9A66}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3D9DF140-B246-11EE-9EC1-0800200C9A66}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3D9DF140-B246-11EE-9EC1-0800200C9A66}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3D9DF140-B246-11EE-9EC1-0800200C9A66}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FC8934FE-9F4E-42A5-9D4C-6F65FE7CFC60}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FC8934FE-9F4E-42A5-9D4C-6F65FE7CFC60}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FC8934FE-9F4E-42A5-9D4C-6F65FE7CFC60}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FC8934FE-9F4E-42A5-9D4C-6F65FE7CFC60}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3ABEC2F6-DACF-4E78-B16C-FE3EF7CFEE1F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3ABEC2F6-DACF-4E78-B16C-FE3EF7CFEE1F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3ABEC2F6-DACF-4E78-B16C-FE3EF7CFEE1F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3ABEC2F6-DACF-4E78-B16C-FE3EF7CFEE1F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2AF829E5-BD36-4F7E-9B08-60DB16218465}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2AF829E5-BD36-4F7E-9B08-60DB16218465}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2AF829E5-BD36-4F7E-9B08-60DB16218465}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2AF829E5-BD36-4F7E-9B08-60DB16218465}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CDCAC979-5959-48BB-9116-3A7F960613E9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CDCAC979-5959-48BB-9116-3A7F960613E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CDCAC979-5959-48BB-9116-3A7F960613E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CDCAC979-5959-48BB-9116-3A7F960613E9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DD4235C3-C0C3-41CE-B448-4D515E8A5B5E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DD4235C3-C0C3-41CE-B448-4D515E8A5B5E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DD4235C3-C0C3-41CE-B448-4D515E8A5B5E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DD4235C3-C0C3-41CE-B448-4D515E8A5B5E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9A7876E5-679B-4A4D-B683-B51233C5A101}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9A7876E5-679B-4A4D-B683-B51233C5A101}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9A7876E5-679B-4A4D-B683-B51233C5A101}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9A7876E5-679B-4A4D-B683-B51233C5A101}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DF72ACD1-AE46-4938-9E6E-0D14112B1C0D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DF72ACD1-AE46-4938-9E6E-0D14112B1C0D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DF72ACD1-AE46-4938-9E6E-0D14112B1C0D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DF72ACD1-AE46-4938-9E6E-0D14112B1C0D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6C59F31F-EC56-4122-ADAC-240ACD11419B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6C59F31F-EC56-4122-ADAC-240ACD11419B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6C59F31F-EC56-4122-ADAC-240ACD11419B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6C59F31F-EC56-4122-ADAC-240ACD11419B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0B3C7A42-968A-4EF6-B71A-77DCED8415CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0B3C7A42-968A-4EF6-B71A-77DCED8415CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0B3C7A42-968A-4EF6-B71A-77DCED8415CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0B3C7A42-968A-4EF6-B71A-77DCED8415CA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9353083F-E7C7-4046-AC8F-C40A058ADFB7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9353083F-E7C7-4046-AC8F-C40A058ADFB7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9353083F-E7C7-4046-AC8F-C40A058ADFB7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9353083F-E7C7-4046-AC8F-C40A058ADFB7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D4E83C8E-A953-4E10-AD5F-15911F90499E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D4E83C8E-A953-4E10-AD5F-15911F90499E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D4E83C8E-A953-4E10-AD5F-15911F90499E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D4E83C8E-A953-4E10-AD5F-15911F90499E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E15A782F-E155-48EC-98BD-5ACAE959AD04}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E15A782F-E155-48EC-98BD-5ACAE959AD04}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E15A782F-E155-48EC-98BD-5ACAE959AD04}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E15A782F-E155-48EC-98BD-5ACAE959AD04}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F40FDC53-6AD4-4ACB-8985-3AA5684628E3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F40FDC53-6AD4-4ACB-8985-3AA5684628E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F40FDC53-6AD4-4ACB-8985-3AA5684628E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F40FDC53-6AD4-4ACB-8985-3AA5684628E3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C17EF63B-5FDC-4EC4-B9CC-2436C23874FF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C17EF63B-5FDC-4EC4-B9CC-2436C23874FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C17EF63B-5FDC-4EC4-B9CC-2436C23874FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C17EF63B-5FDC-4EC4-B9CC-2436C23874FF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8DCBD11D-3FD2-4134-BB63-2149902AA9F7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8DCBD11D-3FD2-4134-BB63-2149902AA9F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8DCBD11D-3FD2-4134-BB63-2149902AA9F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8DCBD11D-3FD2-4134-BB63-2149902AA9F7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{71DA2C7C-464B-42B3-BD7F-332D35A7CA9D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{71DA2C7C-464B-42B3-BD7F-332D35A7CA9D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{71DA2C7C-464B-42B3-BD7F-332D35A7CA9D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{71DA2C7C-464B-42B3-BD7F-332D35A7CA9D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8805DF48-257F-4F28-B21A-5AB751D0EED7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8805DF48-257F-4F28-B21A-5AB751D0EED7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8805DF48-257F-4F28-B21A-5AB751D0EED7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8805DF48-257F-4F28-B21A-5AB751D0EED7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{09A178A5-7162-4149-BDEC-02CA47F282D7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{09A178A5-7162-4149-BDEC-02CA47F282D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{09A178A5-7162-4149-BDEC-02CA47F282D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{09A178A5-7162-4149-BDEC-02CA47F282D7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2B245689-B733-4EF7-AB73-BFD0A6D1F6B6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2B245689-B733-4EF7-AB73-BFD0A6D1F6B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2B245689-B733-4EF7-AB73-BFD0A6D1F6B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2B245689-B733-4EF7-AB73-BFD0A6D1F6B6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CF27D585-6302-4130-98E0-E0E0133B493F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CF27D585-6302-4130-98E0-E0E0133B493F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CF27D585-6302-4130-98E0-E0E0133B493F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CF27D585-6302-4130-98E0-E0E0133B493F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A0C06BAF-4B1D-4699-831A-ED94528C6A55}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A0C06BAF-4B1D-4699-831A-ED94528C6A55}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A0C06BAF-4B1D-4699-831A-ED94528C6A55}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A0C06BAF-4B1D-4699-831A-ED94528C6A55}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C48A95CF-A60A-4FF0-940A-F81D5D92E90C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C48A95CF-A60A-4FF0-940A-F81D5D92E90C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C48A95CF-A60A-4FF0-940A-F81D5D92E90C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C48A95CF-A60A-4FF0-940A-F81D5D92E90C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{763D390F-A7D2-4FD9-AB1E-B1B07FC26B90} = {E4956A12-0C6D-4A75-841F-61083971CC02}
+		{52665057-4580-4D24-9F75-2C01B5EDB6B0} = {B20B4227-0AAE-42E0-8BF4-E5BAE92D3DCD}
+		{7F67815A-743C-4B92-8AD2-894F44368C7E} = {290C2A4F-B3F8-4C53-9658-8798F76F36E5}
+		{A70D63F2-DD89-4CB9-981D-C0CF32C3DFFE} = {7F67815A-743C-4B92-8AD2-894F44368C7E}
+		{1F899A42-8CC3-43C8-A56D-3127C4DBA324} = {A70D63F2-DD89-4CB9-981D-C0CF32C3DFFE}
+		{5BF0DBC5-E687-4847-9120-FA8C3AA84D51} = {1F899A42-8CC3-43C8-A56D-3127C4DBA324}
+		{C437F714-CA4D-48B4-8EEE-4A6F4ACA5ECA} = {290C2A4F-B3F8-4C53-9658-8798F76F36E5}
+		{6D0E2D1D-03FB-42E7-B956-858C49771645} = {7F67815A-743C-4B92-8AD2-894F44368C7E}
+		{4D8DF3DF-EE1A-4D4F-9502-083FC7928FAA} = {7F67815A-743C-4B92-8AD2-894F44368C7E}
+		{3D9DF140-B246-11EE-9EC1-0800200C9A66} = {F8938D60-51A0-4880-9CFC-19C66379BB5D}
+		{831D653C-4BCD-4365-B065-5B6921F89F6E} = {290C2A4F-B3F8-4C53-9658-8798F76F36E5}
+		{63FE29EA-7936-4B23-8A9C-FE2CF3BAE3B8} = {831D653C-4BCD-4365-B065-5B6921F89F6E}
+		{C840849A-7987-4BE4-A5A1-964DF41E394D} = {831D653C-4BCD-4365-B065-5B6921F89F6E}
+		{9542B9DC-DE44-4425-A77C-922B5C3D919D} = {6DBFEEAD-574F-464B-A713-22883E85F6D9}
+		{E0DC5D2B-6DAD-451A-8B20-D563698D69B4} = {6DBFEEAD-574F-464B-A713-22883E85F6D9}
+		{46C76584-D613-411E-A5D7-603F85EC4456} = {E0DC5D2B-6DAD-451A-8B20-D563698D69B4}
+		{54CBD6D9-3321-4A9F-AC94-0DB5B2491F2A} = {9542B9DC-DE44-4425-A77C-922B5C3D919D}
+		{BDCE22D1-C364-4914-90C7-F632C5813602} = {C840849A-7987-4BE4-A5A1-964DF41E394D}
+		{18758C8E-7E4B-4704-A23A-77F3FF5B31FE} = {C840849A-7987-4BE4-A5A1-964DF41E394D}
+		{8B28A4EA-EC50-46B1-8CB2-C935697DE31D} = {C840849A-7987-4BE4-A5A1-964DF41E394D}
+		{4D9DDD9C-9008-4006-8FB6-6A02613AE596} = {8B28A4EA-EC50-46B1-8CB2-C935697DE31D}
+		{B494F4D3-496E-41D2-AEA4-324708940369} = {18758C8E-7E4B-4704-A23A-77F3FF5B31FE}
+		{FC8934FE-9F4E-42A5-9D4C-6F65FE7CFC60} = {B494F4D3-496E-41D2-AEA4-324708940369}
+		{DFA95251-EC6A-47D1-A36D-38332A1574AC} = {BDCE22D1-C364-4914-90C7-F632C5813602}
+		{3ABEC2F6-DACF-4E78-B16C-FE3EF7CFEE1F} = {DFA95251-EC6A-47D1-A36D-38332A1574AC}
+		{8C0E39F6-2C50-4ABB-9455-784CB2872B3F} = {63FE29EA-7936-4B23-8A9C-FE2CF3BAE3B8}
+		{1B83FDAF-DAA2-4420-936F-ABFA4ECC2578} = {831D653C-4BCD-4365-B065-5B6921F89F6E}
+		{C32E3BE1-2754-4EFD-84D0-C37D87946C9A} = {1B83FDAF-DAA2-4420-936F-ABFA4ECC2578}
+		{81165CDF-398D-4FF3-8927-D7ECD163BB2B} = {831D653C-4BCD-4365-B065-5B6921F89F6E}
+		{680DC32A-B9B2-463D-B1C0-423F5C4CB5A9} = {81165CDF-398D-4FF3-8927-D7ECD163BB2B}
+		{EE1DA260-55E7-4B79-B062-E18538FB8265} = {6DBFEEAD-574F-464B-A713-22883E85F6D9}
+		{D4586855-43EF-4DF7-9357-9511B84395B9} = {EE1DA260-55E7-4B79-B062-E18538FB8265}
+		{2AF829E5-BD36-4F7E-9B08-60DB16218465} = {C32E3BE1-2754-4EFD-84D0-C37D87946C9A}
+		{CDCAC979-5959-48BB-9116-3A7F960613E9} = {8C0E39F6-2C50-4ABB-9455-784CB2872B3F}
+		{DD4235C3-C0C3-41CE-B448-4D515E8A5B5E} = {4D9DDD9C-9008-4006-8FB6-6A02613AE596}
+		{9A7876E5-679B-4A4D-B683-B51233C5A101} = {54CBD6D9-3321-4A9F-AC94-0DB5B2491F2A}
+		{6DBFEEAD-574F-464B-A713-22883E85F6D9} = {831D653C-4BCD-4365-B065-5B6921F89F6E}
+		{DF72ACD1-AE46-4938-9E6E-0D14112B1C0D} = {D4586855-43EF-4DF7-9357-9511B84395B9}
+		{6C59F31F-EC56-4122-ADAC-240ACD11419B} = {46C76584-D613-411E-A5D7-603F85EC4456}
+		{0B3C7A42-968A-4EF6-B71A-77DCED8415CA} = {680DC32A-B9B2-463D-B1C0-423F5C4CB5A9}
+		{A21F6655-9561-4061-A393-D2AA6D686620} = {831D653C-4BCD-4365-B065-5B6921F89F6E}
+		{AD507B4D-D26F-4246-AB54-2C0D28F6750B} = {A21F6655-9561-4061-A393-D2AA6D686620}
+		{9353083F-E7C7-4046-AC8F-C40A058ADFB7} = {AD507B4D-D26F-4246-AB54-2C0D28F6750B}
+		{372AEC0A-2CE7-41EB-9A68-463E6BC0019B} = {C840849A-7987-4BE4-A5A1-964DF41E394D}
+		{C74122A5-D3FD-4C4E-ADE2-B2CAD4088CCD} = {372AEC0A-2CE7-41EB-9A68-463E6BC0019B}
+		{D4E83C8E-A953-4E10-AD5F-15911F90499E} = {C74122A5-D3FD-4C4E-ADE2-B2CAD4088CCD}
+		{E15A782F-E155-48EC-98BD-5ACAE959AD04} = {21084DDB-D468-490A-B5F6-1CC42BF9F543}
+		{C0C3AD2F-0391-4529-8F01-9D842838B94F} = {C437F714-CA4D-48B4-8EEE-4A6F4ACA5ECA}
+		{48A15F99-03B3-40A9-A1C7-0402BD7843FE} = {C0C3AD2F-0391-4529-8F01-9D842838B94F}
+		{F40FDC53-6AD4-4ACB-8985-3AA5684628E3} = {48A15F99-03B3-40A9-A1C7-0402BD7843FE}
+		{78F4CB19-09CA-4BAE-9499-80F08BB7B25C} = {831D653C-4BCD-4365-B065-5B6921F89F6E}
+		{21084DDB-D468-490A-B5F6-1CC42BF9F543} = {78F4CB19-09CA-4BAE-9499-80F08BB7B25C}
+		{94E1B472-1756-4FD5-A93C-9FFF17F95582} = {58DD32F7-500B-4DBF-B166-5CB399DDA920}
+		{B101EA0D-FE47-4171-A0DD-D17C9E49BB16} = {94E1B472-1756-4FD5-A93C-9FFF17F95582}
+		{C17EF63B-5FDC-4EC4-B9CC-2436C23874FF} = {B101EA0D-FE47-4171-A0DD-D17C9E49BB16}
+		{58DD32F7-500B-4DBF-B166-5CB399DDA920} = {290C2A4F-B3F8-4C53-9658-8798F76F36E5}
+		{F26A2254-93D3-4B3B-9CF5-EBFBD900339A} = {831D653C-4BCD-4365-B065-5B6921F89F6E}
+		{EB16BC23-49F8-40E2-A4AA-C980F55496A1} = {F26A2254-93D3-4B3B-9CF5-EBFBD900339A}
+		{8DCBD11D-3FD2-4134-BB63-2149902AA9F7} = {EB16BC23-49F8-40E2-A4AA-C980F55496A1}
+		{07729F22-F906-42BD-B108-A93A5BCE77D2} = {C840849A-7987-4BE4-A5A1-964DF41E394D}
+		{75E66A74-18F3-43D3-9184-9A13E92C2FD8} = {07729F22-F906-42BD-B108-A93A5BCE77D2}
+		{71DA2C7C-464B-42B3-BD7F-332D35A7CA9D} = {75E66A74-18F3-43D3-9184-9A13E92C2FD8}
+		{9294BA53-E189-4C99-ACBE-F2FCD699D858} = {831D653C-4BCD-4365-B065-5B6921F89F6E}
+		{464A5BC7-E224-463A-82BF-42A011D62D32} = {9294BA53-E189-4C99-ACBE-F2FCD699D858}
+		{8805DF48-257F-4F28-B21A-5AB751D0EED7} = {464A5BC7-E224-463A-82BF-42A011D62D32}
+		{F5F0D181-F1FF-4ED3-8E5D-8A0228A255E5} = {831D653C-4BCD-4365-B065-5B6921F89F6E}
+		{9CAB726C-7351-48C0-8EEB-52B86DC67457} = {F5F0D181-F1FF-4ED3-8E5D-8A0228A255E5}
+		{B9D23DDF-60E0-4FDA-8E60-609DA1E4BFEA} = {9CAB726C-7351-48C0-8EEB-52B86DC67457}
+		{09A178A5-7162-4149-BDEC-02CA47F282D7} = {B9D23DDF-60E0-4FDA-8E60-609DA1E4BFEA}
+		{4535C00C-16A2-4708-8D5A-C6EB788DF9FE} = {F5F0D181-F1FF-4ED3-8E5D-8A0228A255E5}
+		{12A3FECD-2054-4BD7-BC76-8969DFC4024F} = {4535C00C-16A2-4708-8D5A-C6EB788DF9FE}
+		{2B245689-B733-4EF7-AB73-BFD0A6D1F6B6} = {12A3FECD-2054-4BD7-BC76-8969DFC4024F}
+		{44A13671-5CAF-4586-AC2A-CB66E9B39212} = {F5F0D181-F1FF-4ED3-8E5D-8A0228A255E5}
+		{E2C02699-847D-479E-B476-92B4512BC201} = {44A13671-5CAF-4586-AC2A-CB66E9B39212}
+		{CF27D585-6302-4130-98E0-E0E0133B493F} = {E2C02699-847D-479E-B476-92B4512BC201}
+		{8FA39960-D472-42C3-8245-EFEEC20EDAEE} = {F5F0D181-F1FF-4ED3-8E5D-8A0228A255E5}
+		{E87C1A77-CDF2-4980-8FB1-9F0D5C95849C} = {8FA39960-D472-42C3-8245-EFEEC20EDAEE}
+		{A0C06BAF-4B1D-4699-831A-ED94528C6A55} = {E87C1A77-CDF2-4980-8FB1-9F0D5C95849C}
+		{AEB0A72F-3C01-4B86-BB04-5CB96DA9F3D7} = {F5F0D181-F1FF-4ED3-8E5D-8A0228A255E5}
+		{90AA1FF4-939E-45B1-BE64-D90322169D50} = {AEB0A72F-3C01-4B86-BB04-5CB96DA9F3D7}
+		{C48A95CF-A60A-4FF0-940A-F81D5D92E90C} = {90AA1FF4-939E-45B1-BE64-D90322169D50}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {AF4816CC-06EF-4533-8C9D-E917FF062DA9}
+	EndGlobalSection
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		DOM Classes\DOM Classes.projitems*{3abec2f6-dacf-4e78-b16c-fe3ef7cfee1f}*SharedItemsImports = 4
+		MediaOpsShared\MediaOpsShared.projitems*{3abec2f6-dacf-4e78-b16c-fe3ef7cfee1f}*SharedItemsImports = 4
+		MediaOpsShared\MediaOpsShared.projitems*{4d8df3df-ee1a-4d4f-9502-083fc7928faa}*SharedItemsImports = 13
+		DOM Classes\DOM Classes.projitems*{5bf0dbc5-e687-4847-9120-fa8c3aa84d51}*SharedItemsImports = 5
+		MediaOpsShared\MediaOpsShared.projitems*{5bf0dbc5-e687-4847-9120-fa8c3aa84d51}*SharedItemsImports = 5
+		DOM Classes\DOM Classes.projitems*{6d0e2d1d-03fb-42e7-b956-858c49771645}*SharedItemsImports = 13
+		DOM Classes\DOM Classes.projitems*{71da2c7c-464b-42b3-bd7f-332d35a7ca9d}*SharedItemsImports = 4
+		MediaOpsShared\MediaOpsShared.projitems*{71da2c7c-464b-42b3-bd7f-332d35a7ca9d}*SharedItemsImports = 4
+		DOM Classes\DOM Classes.projitems*{dd4235c3-c0c3-41ce-b448-4d515e8a5b5e}*SharedItemsImports = 4
+		MediaOpsShared\MediaOpsShared.projitems*{dd4235c3-c0c3-41ce-b448-4d515e8a5b5e}*SharedItemsImports = 4
+		MediaOpsShared\MediaOpsShared.projitems*{f40fdc53-6ad4-4acb-8985-3aa5684628e3}*SharedItemsImports = 5
+		DOM Classes\DOM Classes.projitems*{fc8934fe-9f4e-42a5-9d4c-6f65fe7cfc60}*SharedItemsImports = 4
+		MediaOpsShared\MediaOpsShared.projitems*{fc8934fe-9f4e-42a5-9d4c-6f65fe7cfc60}*SharedItemsImports = 4
+	EndGlobalSection
+EndGlobal

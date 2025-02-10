@@ -1,0 +1,5 @@
+<Project>
+	<ItemGroup>
+		<PackageReference Update="*" PrivateAssets="all" />
+	</ItemGroup>
+</Project>

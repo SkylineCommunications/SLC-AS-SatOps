@@ -1,0 +1,72 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+	<PropertyGroup>
+		<TargetFramework>net472</TargetFramework>
+		<CodeAnalysisRuleSet></CodeAnalysisRuleSet>
+		<RootNamespace>Skyline.DataMiner.Utils.MediaOps.Common</RootNamespace>
+		<AssemblyName>Skyline.DataMiner.Utils.MediaOps.Common</AssemblyName>
+		<RootNamespace>Skyline.DataMiner.Utils.MediaOps.Common</RootNamespace>
+		<GenerateDocumentationFile>True</GenerateDocumentationFile>
+		<Authors>SkylineCommunications</Authors>
+		<Company>Skyline Communications</Company>
+		<Version>1.0.0</Version>
+		<Description>Library specific to the MediaOps project</Description>
+	</PropertyGroup>
+
+	<PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+		<DebugType>full</DebugType>
+		<CodeAnalysisRuleSet>..\Internal\Code Analysis\qaction-debug.ruleset</CodeAnalysisRuleSet>
+	</PropertyGroup>
+	<PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+		<DebugType>pdbonly</DebugType>
+		<CodeAnalysisRuleSet>..\Internal\Code Analysis\qaction-release.ruleset</CodeAnalysisRuleSet>
+	</PropertyGroup>
+	<PropertyGroup>
+		<DefineConstants>$(DefineConstants);DCFv1;DBInfo;ALARM_SQUASHING</DefineConstants>
+	</PropertyGroup>
+	<ItemGroup>
+	  <Compile Remove="IOData\ResourceScheduling\Scripts\JobHandler\**" />
+	  <Compile Remove="ScriptData\**" />
+	  <EmbeddedResource Remove="IOData\ResourceScheduling\Scripts\JobHandler\**" />
+	  <EmbeddedResource Remove="ScriptData\**" />
+	  <None Remove="IOData\ResourceScheduling\Scripts\JobHandler\**" />
+	  <None Remove="ScriptData\**" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+		<PackageReference Include="Serilog.Sinks.File" Version="6.0.0" />
+		<PackageReference Include="Skyline.DataMiner.ConnectorAPI.SDP" Version="1.1.1" />
+		<PackageReference Include="Skyline.DataMiner.Core.DataMinerSystem.Automation" Version="1.1.2.1" />
+		<PackageReference Include="Skyline.DataMiner.Core.FlowEngineering" Version="0.0.13" />
+		<PackageReference Include="Skyline.DataMiner.Dev.Automation" Version="10.4.12" />
+		<PackageReference Include="Skyline.DataMiner.MediaOps.Communication" Version="1.0.1-rc03" />
+		<PackageReference Include="Skyline.DataMiner.Utils.DOM" Version="10.4.10.2" />
+		<PackageReference Include="Skyline.DataMiner.Utils.InteractiveAutomationScriptToolkit" Version="9.0.3" />
+		<PackageReference Include="Skyline.DataMiner.Utils.MediaOps.Temp.Common" Version="1.0.1-alpha58" />
+		<PackageReference Include="Skyline.DataMiner.Utils.MediaOps.Temp.Helpers" Version="1.0.1-alpha58" />
+		<PackageReference Include="Skyline.DataMiner.Utils.ScriptPerformanceLogger" Version="2.0.9" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<SonarQubeSetting Include="sonar.cpd.exclusions">
+			<Value>**/*</Value>
+		</SonarQubeSetting>
+	</ItemGroup>
+
+	<ItemGroup>
+		<Reference Include="System.Runtime.Serialization" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<AssemblyAttribute Include="System.Runtime.CompilerServices.InternalsVisibleTo">
+			<_Parameter1>WorkflowEndToEndTests</_Parameter1>
+		</AssemblyAttribute>
+	</ItemGroup>
+
+	<ProjectExtensions>
+		<VisualStudio><UserProperties DisLinkedXmlFile="..\MediaOpsCommon.xml" DisLinkId="1" DisProjectType="automationScriptProject" /></VisualStudio>
+	</ProjectExtensions>
+
+	<Import Project="..\DOM Classes\DOM Classes.projitems" Label="Shared" />
+	<Import Project="..\MediaOpsShared\MediaOpsShared.projitems" Label="Shared" />
+</Project>

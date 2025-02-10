@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects Condition="'$(MSBuildVersion)' == '' Or '$(MSBuildVersion)' &lt; '16.0'">$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>6d0e2d1d-03fb-42e7-b956-858c49771645</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>Skyline.DataMiner.Utils.MediaOps.Common</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)DOM\Applications\FixedDomInstanceIds.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DOM\Applications\ModuleHandlerBase.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DOM\Applications\SatelliteManagement\Definitions\Beam.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DOM\Applications\SatelliteManagement\Definitions\Satellite.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DOM\Applications\SatelliteManagement\Definitions\Slot.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DOM\Applications\SatelliteManagement\Sections\SlotDefinition.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DOM\Applications\SatelliteManagement\Definitions\Transponder.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DOM\Applications\SatelliteManagement\Definitions\TransponderPlan.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DOM\Applications\SatelliteManagement\SatelliteManagementHandler.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DOM\Applications\SatelliteManagement\Sections\BeamSection.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DOM\Applications\SatelliteManagement\Sections\General.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DOM\Applications\SatelliteManagement\Sections\LaunchInformation.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DOM\Applications\SatelliteManagement\Sections\Origin.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DOM\Applications\SatelliteManagement\Sections\SatelliteSection.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DOM\Applications\SatelliteManagement\Sections\SlotSection.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DOM\Applications\SatelliteManagement\Sections\TransponderPlanSection.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DOM\Applications\SatelliteManagement\Sections\TransponderSection.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DOM\Applications\GeneratedDomIds.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DOM\Applications\InstanceBase.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DOM\Applications\SectionBase.cs" />
+  </ItemGroup>
+</Project>
