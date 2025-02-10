@@ -42,8 +42,8 @@
 		<PackageReference Include="Skyline.DataMiner.MediaOps.Communication" Version="1.0.1-rc03" />
 		<PackageReference Include="Skyline.DataMiner.Utils.DOM" Version="10.4.10.2" />
 		<PackageReference Include="Skyline.DataMiner.Utils.InteractiveAutomationScriptToolkit" Version="9.0.3" />
-		<PackageReference Include="Skyline.DataMiner.Utils.MediaOps.Temp.Common" Version="1.0.1-alpha71" />
-		<PackageReference Include="Skyline.DataMiner.Utils.MediaOps.Temp.Helpers" Version="1.0.1-alpha71" />
+		<PackageReference Include="Skyline.DataMiner.Utils.MediaOps.Temp.Common" Version="1.0.1-alpha73" />
+		<PackageReference Include="Skyline.DataMiner.Utils.MediaOps.Temp.Helpers" Version="1.0.1-alpha73" />
 		<PackageReference Include="Skyline.DataMiner.Utils.ScriptPerformanceLogger" Version="2.0.9" />
 	</ItemGroup>
 

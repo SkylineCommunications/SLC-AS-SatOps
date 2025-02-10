@@ -76,6 +76,10 @@ namespace Slot_Bookings_Extension_1
 
 		private DomApplications.SatelliteManagement.SatelliteManagementHandler satelliteManagementHandler;
 
+		private ResourceStudioHelper resourceStudioHelper;
+
+		private IDictionary<string, Capacity> capacitiesDict;
+
 		/// <summary>
 		/// The script entry point.
 		/// </summary>
@@ -95,10 +99,23 @@ namespace Slot_Bookings_Extension_1
 
 					var slotToBook = new Slot(engine, logger, satelliteManagementHandler, selectedSlot);
 
+					resourceStudioHelper = new ResourceStudioHelper(engine);
+					capacitiesDict = resourceStudioHelper.GetCapacities(new List<string> { "Transponder Bandwidth" });
+
+					var resourceCapacity = GetCapacity(slotToBook, resourceStudioHelper, capacitiesDict);
+					var slotToBookUsages = new List<CapacityUsage>
+						{
+						 	new CapacityUsage
+						 	{
+						 		DomCapacityId = resourceCapacity?.Id ?? Guid.Empty,
+						 		Value = resourceCapacity.CapacityValue,
+						 	},
+						};
+
 					var slotsByTransponder = GetTransponderSlots(slotToBook.DomSlot.SlotSection.TransponderId);
 					var reservedNodes = GetReservedNodes(logger, slotToBook, slotsByTransponder);
 
-					bookingExtensionHandler.ReturnResult(reservedNodes, Skyline.DataMiner.Utils.MediaOps.Helpers.Scheduling.JobNodeRelationshipActions.TransponderSlotId);
+					bookingExtensionHandler.ReturnResult(slotToBookUsages, reservedNodes, Skyline.DataMiner.Utils.MediaOps.Helpers.Scheduling.JobNodeRelationshipActions.TransponderSlotId);
 				}
 				catch (Exception ex)
 				{
@@ -110,8 +127,6 @@ namespace Slot_Bookings_Extension_1
 		private List<ExtensionNode> GetReservedNodes(SatOpsLogger logger, Slot slotToBook, List<DomApplications.SatelliteManagement.Slot> slotsByTransponder)
 		{
 			var reservedNodes = new List<ExtensionNode>();
-
-			var resourceStudioHelper = new ResourceStudioHelper(engine);
 
 			foreach (var domSlot in slotsByTransponder)
 			{
