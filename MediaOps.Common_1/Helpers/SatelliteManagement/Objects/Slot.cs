@@ -47,8 +47,7 @@ namespace Skyline.DataMiner.Utils.SatOps.Common.Helpers.SatelliteManagement
 
 				var slotResource = DomSlot.SlotSection.ResourceId;
 
-				var settings = new ClientMetadata();
-				var resourceStudioHelper = new ResourceStudioHelper(engine, settings);
+				var resourceStudioHelper = new ResourceStudioHelper(engine);
 				var resource = resourceStudioHelper.GetResource(slotResource);
 
 				if (slotResource == Guid.Empty || resource?.Name == null)

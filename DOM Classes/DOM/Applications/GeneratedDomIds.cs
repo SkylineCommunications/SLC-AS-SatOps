@@ -10,12 +10,6 @@ namespace Skyline.DataMiner.Utils.SatOps.Common.DOM.Applications.DomIds
 	using Skyline.DataMiner.Net.Apps.DataMinerObjectModel;
 	using Skyline.DataMiner.Net.Sections;
 
-	// TODO: remove reference
-	public static class SlcResource_Studio
-	{
-		public const string ModuleId = "(slc)resource_studio";
-	}
-
 	public static class SlcSatellite_Management
 	{
 		public const string ModuleId = "(slc)satellite_management";

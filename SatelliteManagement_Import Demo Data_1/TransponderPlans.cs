@@ -3,17 +3,17 @@
 	using System;
 	using System.Collections.Generic;
 	using System.Linq;
+
 	using NPOI.SS.UserModel;
+
 	using Skyline.DataMiner.Automation;
 	using Skyline.DataMiner.Net.Apps.DataMinerObjectModel;
 	using Skyline.DataMiner.Utils.DOM.Builders;
-	using Skyline.DataMiner.Utils.SatOps.Common.DOM;
 	using Skyline.DataMiner.Utils.SatOps.Common.DOM.Applications.DomIds;
-	using Skyline.DataMiner.Utils.SatOps.Common.DOM.Builders;
 	using Skyline.DataMiner.Utils.SatOps.Common.Helpers.SatelliteManagement;
+	using Skyline.DataMiner.Utils.SatOps.Common.Utils;
 
 	using DomApplications = Skyline.DataMiner.Utils.SatOps.Common.DOM.Applications;
-	using Skyline.DataMiner.Utils.SatOps.Common.Utils;
 
 	internal class TransponderPlans
 	{

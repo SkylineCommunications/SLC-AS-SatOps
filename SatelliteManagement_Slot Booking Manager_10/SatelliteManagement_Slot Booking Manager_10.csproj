@@ -56,8 +56,11 @@
     <PackageReference Include="Skyline.DataMiner.Dev.Automation">
       <Version>10.4.12</Version>
     </PackageReference>
+    <PackageReference Include="Skyline.DataMiner.Utils.MediaOps.Temp.Common">
+      <Version>1.0.1-alpha71</Version>
+    </PackageReference>
     <PackageReference Include="Skyline.DataMiner.Utils.MediaOps.Temp.Helpers">
-      <Version>1.0.1-alpha58</Version>
+      <Version>1.0.1-alpha71</Version>
     </PackageReference>
   </ItemGroup>
   <ItemGroup>

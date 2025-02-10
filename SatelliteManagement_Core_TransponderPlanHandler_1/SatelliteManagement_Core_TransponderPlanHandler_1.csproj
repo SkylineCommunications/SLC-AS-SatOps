@@ -62,7 +62,7 @@
       <Version>1.0.1-rc03</Version>
     </PackageReference>
     <PackageReference Include="Skyline.DataMiner.Utils.MediaOps.Temp.Common">
-      <Version>1.0.1-alpha58</Version>
+      <Version>1.0.1-alpha71</Version>
     </PackageReference>
   </ItemGroup>
   <ItemGroup>
@@ -75,7 +75,7 @@
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <ProjectExtensions>
     <VisualStudio>
-      <UserProperties DisLinkedXmlFile="..\SatelliteManagement_Core_TransponderPlanHandler.xml" DisProjectType="automationScriptProject" DisLinkId="1" />
+      <UserProperties DisLinkId="1" DisProjectType="automationScriptProject" DisLinkedXmlFile="..\SatelliteManagement_Core_TransponderPlanHandler.xml" />
     </VisualStudio>
   </ProjectExtensions>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

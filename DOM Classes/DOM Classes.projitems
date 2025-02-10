@@ -9,7 +9,6 @@
     <Import_RootNamespace>Skyline.DataMiner.Utils.MediaOps.Common</Import_RootNamespace>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="$(MSBuildThisFileDirectory)DOM\Applications\FixedDomInstanceIds.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)DOM\Applications\ModuleHandlerBase.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)DOM\Applications\SatelliteManagement\Definitions\Beam.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)DOM\Applications\SatelliteManagement\Definitions\Satellite.cs" />

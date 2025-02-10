@@ -85,13 +85,7 @@
 				if (transponder.DomTransponder.StatusId.Equals("active"))
 				{
 					var domSatellite = satelliteManagementHandler.GetSatelliteByDomInstanceId(transponder.DomTransponder.TransponderSection.TransponderSatelliteId);
-
-					var settings = new ClientMetadata
-					{
-						ModuleId = string.Empty,
-						Prefix = string.Empty,
-					};
-					var resourceStudioHelper = new ResourceStudioHelper(engine, settings);
+					var resourceStudioHelper = new ResourceStudioHelper(engine);
 
 					var slotResourceDict = new Dictionary<string, List<Resource>>();
 					foreach (var slotDef in DomTransponderPlan.SlotDefinitions)
