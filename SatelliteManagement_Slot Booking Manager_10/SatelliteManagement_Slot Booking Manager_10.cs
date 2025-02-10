@@ -96,21 +96,21 @@ namespace Slot_Bookings_Extension_1
 
 					satelliteManagementHandler = new DomApplications.SatelliteManagement.SatelliteManagementHandler(engine);
 					var selectedSlot = satelliteManagementHandler.GetSlots(DomInstanceExposers.FieldValues.DomInstanceField(DomApplications.DomIds.SlcSatellite_Management.Sections.Slot.Resource).Equal(domResourceId)).SingleOrDefault();
-
 					var slotToBook = new Slot(engine, logger, satelliteManagementHandler, selectedSlot);
 
 					resourceStudioHelper = new ResourceStudioHelper(engine);
 					capacitiesDict = resourceStudioHelper.GetCapacities(new List<string> { "Transponder Bandwidth" });
 
 					var resourceCapacity = GetCapacity(slotToBook, resourceStudioHelper, capacitiesDict);
-					var slotToBookUsages = new List<CapacityUsage>
+					var slotToBookUsages = new List<CapacityUsage>();
+					if (resourceCapacity != null)
+					{
+						slotToBookUsages.Add(new CapacityUsage
 						{
-						 	new CapacityUsage
-						 	{
-						 		DomCapacityId = resourceCapacity?.Id ?? Guid.Empty,
-						 		Value = resourceCapacity.CapacityValue,
-						 	},
-						};
+							DomCapacityId = resourceCapacity.Id,
+							Value = resourceCapacity.CapacityValue,
+						});
+					}
 
 					var slotsByTransponder = GetTransponderSlots(slotToBook.DomSlot.SlotSection.TransponderId);
 					var reservedNodes = GetReservedNodes(logger, slotToBook, slotsByTransponder);
