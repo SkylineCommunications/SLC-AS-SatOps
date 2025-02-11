@@ -1,0 +1,57 @@
+name: Quick Build
+
+on:
+  push:
+    branches: 
+     - '**'
+  pull_request:
+    branches: 
+     - '**'
+
+env:
+  #https://github.com/NuGet/Home/issues/7575#issuecomment-443801131
+  NUGET_RESTORE_MSBUILD_ARGS: /p:Configuration=Release
+
+jobs:
+  quick-build:
+    runs-on: windows-latest
+
+    steps:
+     - uses: actions/checkout@v4
+       with:
+         fetch-depth: 0
+         fetch-tags: true
+    
+     - name: Setup MSBuild
+       uses: microsoft/setup-msbuild@v2.0.0
+
+     - name: Setup VSTest
+       uses: darenm/Setup-VSTest@v1.3
+    
+     - name: Setup NuGet
+       uses: NuGet/setup-nuget@v2.0.1
+
+     - name: Restore NuGet cache
+       uses: actions/cache@v4
+       with:
+         path: ~/.nuget/packages
+         key: ${{ runner.os }}-nuget-${{ hashFiles('**/*.csproj') }}
+         restore-keys: |
+           ${{ runner.os }}-nuget-
+
+     - name: Restore NuGet packages
+       run: |
+         nuget sources add -name github -source "https://nuget.pkg.github.com/SkylineCommunications/index.json" -username USERNAME -password ${{ secrets.GITHUB_TOKEN }} 
+         nuget restore "MediaOps.sln"
+     
+     - name: Build Solution
+       run: msbuild "MediaOps.sln" /p:Configuration=Release /verbosity:quiet /clp:"Summary;ErrorsOnly;ForceConsoleColor" /p:WarningLevel=0 /p:RunCodeAnalysis=false /maxcpucount
+
+     - name: Run Unit Tests
+       shell: pwsh
+       run: |
+        $TestDlls = Get-ChildItem -Filter "*Test*.dll" -Recurse -File 
+          | Where-Object { $_.FullName -match '\\bin\\Release\\' -and $_.Name -notmatch 'Microsoft' } 
+          | Select-Object -ExpandProperty FullName
+        Write-Host $TestDlls
+        & vstest.console.exe $TestDlls /Logger:TRX /Parallel

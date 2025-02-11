@@ -1,0 +1,45 @@
+name: Create & Upload Package
+
+on:
+  push:
+    branches: 
+     - 'main**'
+
+env:
+  #https://github.com/NuGet/Home/issues/7575#issuecomment-443801131
+  NUGET_RESTORE_MSBUILD_ARGS: /p:Configuration=Release
+
+jobs:
+  create-upload-package:
+    runs-on: ubuntu-22.04
+
+    steps:
+     - uses: actions/checkout@v4
+       with:
+         fetch-depth: 0
+
+     - name: InstallPackageCreation
+       run: dotnet tool install -g Skyline.DataMiner.CICD.Tools.Packager --version 2.0.6
+
+     - name: Install Catalog Upload
+       run: dotnet tool install -g Skyline.DataMiner.CICD.Tools.CatalogUpload --version 2.0.2
+
+     - name: Install NuGet
+       uses: nuget/setup-nuget@v2.0.1
+        
+     - name: Restore NuGet
+       run: |
+         nuget sources add -src "https://nuget.pkg.github.com/SkylineCommunications/index.json" -UserName USERNAME -Password ${{ secrets.GITHUB_TOKEN }}
+         nuget restore
+
+     - name: Create DMAPP
+       run: dataminer-package-create dmapp ${{ github.workspace }} --name ${{ github.repository_owner }}_${{ github.event.repository.name }} --output ${{ github.workspace }} --type automation
+
+     - name: Upload DMAPP
+       run: dataminer-catalog-upload 
+            with-registration
+            --path-to-artifact "${{ github.workspace }}/${{ github.repository_owner }}_${{ github.event.repository.name }}.dmapp"
+            --uri-sourcecode "https://github.com/${{ github.repository }}"
+            --branch "B_${{ github.ref_name }}"
+            --artifact-version "0.0.0-${{ github.run_number }}"
+            --dm-catalog-token "${{ secrets.DATAMINER_DEPLOY_KEY }}"

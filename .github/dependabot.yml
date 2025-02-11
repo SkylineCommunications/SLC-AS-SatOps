@@ -1,0 +1,37 @@
+# Please see the documentation for all configuration options:
+# https://help.github.com/github/administering-a-repository/configuration-options-for-dependency-updates
+
+version: 2
+
+registries:
+  nuget-github:
+    type: nuget-feed
+    url: https://nuget.pkg.github.com/SkylineCommunications/index.json
+    token: ${{ secrets.GH_PACKAGES_PAT }}
+  nuget-org:
+    type: nuget-feed
+    url: https://api.nuget.org/v3/index.json
+
+updates:
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+      
+  - package-ecosystem: "nuget"
+    directory: "/"
+    registries:
+      - nuget-github
+      - nuget-org
+    schedule:
+      interval: "weekly"
+    groups:
+      Skyline-DataMiner-Dev:
+        patterns:
+          - "Skyline.DataMiner.Dev.*"
+      Skyline-DataMiner-Core:
+        patterns:
+          - "Skyline.DataMiner.Core.*"
+      MSTest:
+        patterns:
+          - "MSTest.*"

@@ -1,0 +1,60 @@
+name: Deploy Automation Scripts To Dev Server
+
+# Prerequisite: secret 'DATAMINER_DEPLOY_KEY' necessary on Repository or Organization level.
+# Value is the API-key generated in the DCP Admin app (https://admin.dataminer.services/) as authentication for a certain DataMiner System.
+
+# Controls when the workflow will run
+on:
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+env:
+  #https://github.com/NuGet/Home/issues/7575#issuecomment-443801131
+  NUGET_RESTORE_MSBUILD_ARGS: /p:Configuration=Release
+
+jobs: 
+  deploy_internal:   
+    name: Deploy to internal DMA
+    environment: Skyline Internal
+    runs-on: ubuntu-24.04
+    steps:
+       - uses: actions/checkout@v4
+
+       - name: Find .sln file
+         id: findSlnFile 
+         run: |
+           echo solutionFilePath=$(find . -type f -name '*.sln') >> $GITHUB_OUTPUT
+         shell: bash
+
+       - name: Find or create NuGet.config file
+         if: ${{ github.repository_owner }} == 'SkylineCommunications'
+         id: findOrCreateNuGetFile
+         run: |
+           file=$(find . -type f -iname 'nuget.config' | head -n 1)
+           if [[ -n "$file" ]]; then
+             echo "NuGet config file exists: $file"
+             echo NuGetFileName=$(basename $file) >> $GITHUB_OUTPUT
+           else
+             echo "NuGet config does not exist. Creating..."
+             dotnet new nugetconfig --output ${{ github.workspace }}
+             echo NuGetFileName=nuget.config >> $GITHUB_OUTPUT
+           fi
+         shell: bash
+
+       - name: Enable Skyline GitHub NuGet Registry
+         if: ${{ github.repository_owner }} == 'SkylineCommunications'
+         run: dotnet nuget add source "https://nuget.pkg.github.com/SkylineCommunications/index.json" --username USERNAME --password ${{ secrets.GITHUB_TOKEN }} --store-password-in-clear-text --configfile ${{ github.workspace }}/${{ steps.findOrCreateNuGetFile.outputs.NuGetFileName }}
+      
+       - name: NuGet restore solution
+         run: dotnet restore "${{ steps.findSlnFile.outputs.solutionFilePath }}"
+
+       - name: Skyline DataMiner Deploy Action Development
+         if: github.ref_type == 'branch'
+         uses: SkylineCommunications/Skyline-DataMiner-Deploy-Action@v2
+         with:
+           api-key: ${{ secrets.DATAMINER_DEPLOY_KEY }}
+           github-token: ${{ secrets.GITHUB_TOKEN }}
+           solution-path: ${{ steps.findSlnFile.outputs.solutionFilePath }}
+           artifact-name: ${{ github.repository }} ${{ github.ref_name }}_B${{ github.run_number }}
+           build-number: ${{ github.run_number }}
+           timeout: 300
