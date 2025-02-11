@@ -45,7 +45,7 @@ jobs:
          nuget restore "SatOps.sln"
      
      - name: Build Solution
-       run: msbuild "MediaOps.sln" /p:Configuration=Release /verbosity:quiet /clp:"Summary;ErrorsOnly;ForceConsoleColor" /p:WarningLevel=0 /p:RunCodeAnalysis=false /maxcpucount
+       run: msbuild "SatOps.sln" /p:Configuration=Release /verbosity:quiet /clp:"Summary;ErrorsOnly;ForceConsoleColor" /p:WarningLevel=0 /p:RunCodeAnalysis=false /maxcpucount
 
      - name: Run Unit Tests
        shell: pwsh
