@@ -42,7 +42,7 @@ jobs:
      - name: Restore NuGet packages
        run: |
          nuget sources add -name github -source "https://nuget.pkg.github.com/SkylineCommunications/index.json" -username USERNAME -password ${{ secrets.GITHUB_TOKEN }} 
-         nuget restore "MediaOps.sln"
+         nuget restore "SatOps.sln"
      
      - name: Build Solution
        run: msbuild "MediaOps.sln" /p:Configuration=Release /verbosity:quiet /clp:"Summary;ErrorsOnly;ForceConsoleColor" /p:WarningLevel=0 /p:RunCodeAnalysis=false /maxcpucount
