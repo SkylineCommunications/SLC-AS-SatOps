@@ -50,7 +50,7 @@ jobs:
 
        - name: Skyline DataMiner Deploy Action Development
          if: github.ref_type == 'branch'
-         uses: SkylineCommunications/Skyline-DataMiner-Deploy-Action@v2
+         uses: SkylineCommunications/Skyline-DataMiner-Deploy-Action@v3
          with:
            api-key: ${{ secrets.DATAMINER_DEPLOY_KEY }}
            github-token: ${{ secrets.GITHUB_TOKEN }}
